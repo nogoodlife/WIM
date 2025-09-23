@@ -895,11 +895,29 @@ function lib:WHO_LIST_UPDATE()
 end
 
 function lib:ProcessWhoResults()
+	-- Safety check: ensure Result is always a table
+	if not self.Result then
+		self.Result = {}
+	end
+	
 	local num
 	self.Total, num = GetNumWhoResults()
-	for i=1, num do
+	
+	-- Use self.Total (available results) instead of num (total found on server)
+	-- This handles private servers that return more results than can be displayed
+	local resultsToProcess = self.Total or num or 0
+	
+	for i = 1, resultsToProcess do
 		local charname, guildname, level, race, class, zone, nonlocalclass = GetWhoInfo(i)
-		self.Result[i] = {Name=charname, Guild=guildname, Level=level, Race=race, Class=class, Zone=zone, NoLocaleClass=nonlocalclass }
+		self.Result[i] = {
+			Name = charname, 
+			Guild = guildname, 
+			Level = level, 
+			Race = race, 
+			Class = class, 
+			Zone = zone, 
+			NoLocaleClass = nonlocalclass 
+		}
 	end
 	
 	self:ReturnWho()
