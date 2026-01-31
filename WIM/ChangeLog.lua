@@ -16,6 +16,15 @@ local function addBetaEntry(version, rdate, description, transmitted)
 end
 
 -- ChangeLog Entries.
+	
+addEntry("3.3.7", "01/01/2026", [[
+	*RMB on WIM minimap icon = ShowAllWindows instead of ShowAllUnreadWindows
+	*wim2wim talents check for female classes
+	*WIM-sherlok sound
+	*ignore wowcircle proxy part of realm names
+	*some ruRU localization
+]]);
+
 addEntry("3.3.7", "07/13/2010", [[
     *Fixed linking of all blizzard items.
     *Changed tooltip to read 'Character' instead of 'Toon Name'.

@@ -273,6 +273,7 @@ WIM.AddLocale("ruRU", {
 	["Reset all options to default."] = "Сброс всех настроек на стандартные значения.",
     
     -- CoreOptions --
+	["Bracket names."] = "Заключать имена в скобки.",
 	["Created by:"] = "Создатель:",
 	["Special Thanks:"] = "Отдельно спасибо:",
 	["Welcome!"] = "Добро пожаловать!",
@@ -321,8 +322,8 @@ WIM.AddLocale("ruRU", {
 	["Color: System Messages"] = "Цвет: системных сообщений",
 	["Color: Error Messages"] = "Цвет: ошибок",
 	["Color: URL - Web Addresses"] = "Цвет: URL - интернет адресов",
-	["Color: History Messages Sent"] = "Цвет: высылаемых сообщений в истории",
-	["Color: History Messages Received"] = "Цвет: получаемых сообщений в истории",
+	["Color: History Messages Sent"] = "Цвет: отправленных сообщений в истории",
+	["Color: History Messages Received"] = "Цвет: полученных сообщений в истории",
 	["Use colors suggested by skin."] = "Использовать цвета входящие в шкурку.",
 	["Enable window fading effects."] = "Включить эффекты затухания окна",
 	["Enable window animation effects."] = "Включить эффекты анимации окна",
@@ -335,8 +336,10 @@ WIM.AddLocale("ruRU", {
 	["Use font suggested by skin."] = "Использовать шрифт входящий в шкурку.",
 	["Chat Font Size"] = "Размер шрифта чата",
 	["Configure general display settings when dealing with whispers."] = "Настройка основного отображения когда происходит общение шепотом.",
-	["Color: Messages Sent"] = "Цвет: высылаемых сообщений",
-	["Color: Messages Received"] = "Цвет: получаемых сообщений",
+	["Color: Messages Sent"] = "Цвет: отправленных сообщений",
+	["Color: Messages Received"] = "Цвет: полученных сообщений",
+	["Color: BNet Messages Sent"] = "Цвет: отправленных BNet сообщений",
+	["Color: BNet Messages Received"] = "Цвет: полученных BNet сообщений",
 	["Use colors suggested by skin."] = "Исп. встроенные цвета шкурки.",
 	["Display user class icons and details."] = "Отображать иконку класса пользователя и другие детали.",
 	["Requires who lookups."] = "Требует поиск через команду /who",
@@ -364,7 +367,7 @@ WIM.AddLocale("ruRU", {
 	["Maintenance"] = "Поддержка",
 	["Allowing your history logs to grow too large will affect the game's performance, therefore it is reccomended that you use the following options."] = "Позволяя вести журнал вашей истории, что может сильно повлиять на производительность вашей игры, поэтому рекомендуется использовать следующие настройки.",
 	["Save a maximum number of messages per person."] = "Макс. количество сохраняемых сообщений на человека.",
-	["%d |4Week:Weeks;"] = "%d |4ниделя: нидели:нидель;",
+	["%d |4Week:Weeks;"] = "%d |4неделя: недели:недель;",
 	["Automatically delete old messages."] = "Автоматически удалять старые сообщения.",
 	["WIM-2-WIM is a feature which allows users with WIM to interact in ways that normal whispering can not."] = "WIM-2-WIM даёт возможность пользователям с WIM взаимодействовать таким образом, что нормальное перешептывание не может.",
 	["Enable WIM-2-WIM"] = "Включить WIM-2-WIM",
@@ -377,8 +380,9 @@ WIM.AddLocale("ruRU", {
 	["User Level"] = "Уровень игрока",
 	["Windows will also be hidden when frames such as the world map are shown."] = "Окно будет также закрыто при открытии карты.",
 	["Sounds"] = "Звуки",
-	["Configure various sound events and how they are triggered."] = "настройка звуковых оповещений и когда они будут проигрываться.",
+	["Configure various sound events and how they are triggered."] = "Настройка звуковых оповещений и когда они будут проигрываться.",
 	["Play sound when a whisper is received."] = "Проиграть звук при получении сообщения.",
+	["Play special sound for battle.net friends."] = "Специальный звук для Battle.Net друзей.",
 	["Play special sound for friends."] = "Специальный звук для друзей.",
 	["Play special sound for guild members."] = "Специальный звук для членов гильдии.",
 	["Play sound when a whisper is sent."] = "Проиграть звук при отправке сообщения.",
@@ -387,6 +391,8 @@ WIM.AddLocale("ruRU", {
 	["Unlock from Minimap"] = "Открепить от мини-карты",
     ["Press <Tab> to advance to next tell target."] = "Нажмите <Tab> чтобы перейти к следующему собеседнику.",
     ["Colorize names."] = "Окраска имён.",
+    ["Clamp window to screen."] = "Фиксировать окно на экране.",
+	["Group with whisper windows."] = "Групировать с окном шопота.",
     
     -- TabManagement.lua --
 	["Tab Management"] = "Управление закладками",
@@ -395,6 +401,7 @@ WIM.AddLocale("ruRU", {
 	["Place friends in their own group."] = "Помещать друзей в отдельную группу.",
 	["Place guild members in their own group."] = "Помещать членов гильдии в отдельную группу.",
 	["Does not apply to windows already opened."] = "Не применять если окно уже открыто.",
+	["Automatically group chat windows."] = "Автоматически группировать окна чата.",
 	
         
     -- Talent Specs --
@@ -456,6 +463,7 @@ WIM.AddLocale("ruRU", {
     ["Only while in an instance."] = "Только в подземельях.",
     ["Show Border"] = "Показать рамку",
     ["Animation Direction:"] = "Направления анимации:",
+    ["Delay if I am typing a message."] = "Откладывать, если я печатаю сообщение.",
 	
     --ChatEngine.lua
     ["WIM will manage this chat type within its own message windows."] = "WIM будет управлять данным типом чата в рамках своего окна сообщений.",
@@ -482,7 +490,14 @@ WIM.AddLocale("ruRU", {
     ["Enable WorldFrame Click Detection."] = "Включить обнаружение клика на мировом фрейме.",
     ["The UI must be reloaded in order to disable this module fully. Reload UI now?"] = "Для полного отключения данного модуля, требуется перезагрузить пользовательский интерфейс. Перезагрузить UI теперь?",
 	
+    --OffScreenTracker.lua
+    ["WIM Window Off Screen"] = "Окно WIM за экраном",
+    ["Click to reposition."] = "Кликните для смены расположения.",
+    
 	--Misc
     ["WIM has detected that you are playing on a private server. Some servers can not process ChatAddonMessages. Would you like to enable them anyway?"] = "WIM обнаружил, что вы играете на частном сервере. Некоторые серверы не могут обрабатывать ChatAddonMessages. Хотите включить их все равно?",
     
+	["Last Activity"] = "По последней активности",
+	["Window Created"] = "По созданию окна",
+	
 });
