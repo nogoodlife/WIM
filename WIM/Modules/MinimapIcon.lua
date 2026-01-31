@@ -234,8 +234,7 @@ local function createMinimapIcon()
                     -- display tools menu
                     PopContextMenu("MENU_MINIMAP", "WIM3MinimapButton");
                 else
-                    --ShowAllUnreadWindows();
-					ShowAllWindows();
+                    ShowAllUnreadWindows();
                 end
             else
                 if(_G.IsShiftKeyDown()) then
