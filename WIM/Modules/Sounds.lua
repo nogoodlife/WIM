@@ -144,6 +144,7 @@ end
 
 -- import WIM's stock sounds into LibSharedMedia-3.0
 SML:Register(SOUND, "IM", "Interface\\AddOns\\"..addonTocName.."\\Sounds\\wisp.wav");
+SML:Register(SOUND, "WIM-sherlok", "Interface\\AddOns\\"..addonTocName.."\\Sounds\\sherlok-holms.mp3");
 SML:Register(SOUND, "iChat In", "Interface\\AddOns\\"..addonTocName.."\\Sounds\\ichatIn.mp3");
 SML:Register(SOUND, "iChat Out", "Interface\\AddOns\\"..addonTocName.."\\Sounds\\ichatOut.mp3");
 SML:Register(SOUND, "Chat Blip", "Interface\\AddOns\\"..addonTocName.."\\Sounds\\chat.mp3");
