@@ -8,6 +8,7 @@ local table = table;
 local pairs = pairs;
 local string = string;
 local next = next;
+local print = print;
 
 -- set name space
 setfenv(1, WIM);
@@ -369,7 +370,7 @@ function WIM:VARIABLES_LOADED()
     history = _G.WIM3_History;
     
     -- load some environment data.
-    env.realm = _G.GetCVar("realmName");
+    env.realm = _G.GetCVar("realmName"):gsub(" %[DE]", ""):gsub(" %[FIN]", ""):gsub(" %[MSK]", ""):gsub(" %[NL]", ""):gsub(" %[NSK]", "");
     env.character = _G.UnitName("player");
     
     -- inherrit any new default options which wheren't shown in previous releases.
