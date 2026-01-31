@@ -83,8 +83,9 @@ local i;
 for i=1, table.getn(classList) do
      if(L[classList[i]] ~= L[classList[i].."F"]) then
           classes[L[classList[i].."F"]] = {
-               color = classes[L[classList[i]]].color,
-               tag = classes[L[classList[i]]].tag.."F"
+               color =  classes[L[classList[i]]].color,
+               tag =    classes[L[classList[i]]].tag.."F",
+			   talent = classes[L[classList[i]]].talent,
           };
      end
 end
