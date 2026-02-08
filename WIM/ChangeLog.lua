@@ -18,11 +18,12 @@ end
 -- ChangeLog Entries.
 	
 addEntry("3.3.7", "01/01/2026", [[
-	*RMB on WIM minimap icon = ShowAllWindows instead of ShowAllUnreadWindows
-	*wim2wim talents check for female classes
-	*WIM-sherlok sound
-	*ignore wowcircle proxy part of realm names
-	*some ruRU localization
+  * Fixed /who lua error [by Bennylavaa](https://github.com/Bennylavaa/WIM)
+  * Fixed wim2wim talents error for female classes
+  * Fixed Ignore ShrtcutButton error
+  * RMB on WIM minimap icon = ShowAllWindows instead of ShowAllUnreadWindows
+  * Added WIM-sherlok sound
+  * Fixed ruRU localization
 ]]);
 
 addEntry("3.3.7", "07/13/2010", [[

@@ -307,7 +307,7 @@ RegisterShortcut("location", L["Player Location"], {
 RegisterShortcut("invite", L["Invite to Party"], {
         OnClick = function(self)
             local win = self.parentWindow;
-            _G.InviteUnit(win.isBN and win.toonName or self.parentWindow.theUser);
+            _G.InviteUnit(win.isBN and win.toonName or win.theUser);
         end
     });
 RegisterShortcut("friend", L["Add Friend"], {
@@ -319,18 +319,19 @@ RegisterShortcut("friend", L["Add Friend"], {
         end
     });
 RegisterShortcut("ignore", L["Ignore User"], {
-        OnClick = function(self)
-            _G.StaticPopupDialogs["WIM_IGNORE"] = {
-		text = _G.format(L["Are you sure you want to\nignore %s?"], "|cff69ccf0"..(win.isBN and win.toonName or self.parentWindow.theUser).."|r"),
-		button1 = L["Yes"],
-		button2 = L["No"],
-		OnAccept = function()
-		    _G.AddIgnore(win.isBN and win.toonName or self.parentWindow.theUser);
-		end,
-		timeout = 0,
-		whileDead = 1,
-		hideOnEscape = 1
-	    };
-	    _G.StaticPopup_Show("WIM_IGNORE");
-        end
-    });
+		OnClick = function(self)
+			local win = self.parentWindow;
+			_G.StaticPopupDialogs["WIM_IGNORE"] = {
+				text = _G.format(L["Are you sure you want to\nignore %s?"], "|cff69ccf0"..(win.isBN and win.toonName or win.theUser).."|r"),
+				button1 = L["Yes"],
+				button2 = L["No"],
+				OnAccept = function()
+					_G.AddIgnore(win.isBN and win.toonName or win.theUser);
+				end,
+				timeout = 0,
+				whileDead = 1,
+				hideOnEscape = 1
+			};
+			_G.StaticPopup_Show("WIM_IGNORE");
+		end
+	});

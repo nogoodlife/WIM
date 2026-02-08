@@ -1,10 +1,12 @@
-WIM-3.3.7 for World of Warcraft 3.3.5a (30300) with some random changes/bugfixes 
+WIM-3.3.7 for World of Warcraft 3.3.5a (30300) with some random changes/bugfixes
 
-  * RMB on WIM minimap icon = ShowAllWindows instead of ShowAllUnreadWindows  
-  * wim2wim talents check for female classes  
-  * WIM-sherlok sound  
-  * ignore wowcircle proxy part of realm names  
-  * some ruRU localization  
+  * Fixed /who lua error [by Bennylavaa](https://github.com/Bennylavaa/WIM)
+  * Fixed wim2wim talents error for female classes
+  * Fixed Ignore ShrtcutButton error
+  * RMB on WIM minimap icon = ShowAllWindows instead of ShowAllUnreadWindows
+  * Added WIM-sherlok sound
+  * Fixed ruRU localization
 
-Original WIM-3.3.7 https://www.wowace.com/projects/wim-3/files/439176  
-Yoinked fixes from:
+Keeping version as 3.3.7, otherwise it will spam to other WIM users.
+
+Original WIM-3.3.7 https://www.wowace.com/projects/wim-3/files/439176

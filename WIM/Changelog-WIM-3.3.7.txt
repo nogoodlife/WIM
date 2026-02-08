@@ -1,10 +1,11 @@
 ------------------------------------------------------------------------
 3.3.7fixed by @nogoodlife
-	*RMB on WIM minimap icon = ShowAllWindows instead of ShowAllUnreadWindows
-	*wim2wim talents check for female classes
-	*WIM-sherlok sound
-	*ignore wowcircle proxy part of realm names
-	*some ruRU localization
+  * Fixed /who lua error [by Bennylavaa](https://github.com/Bennylavaa/WIM)
+  * Fixed wim2wim talents error for female classes
+  * Fixed Ignore ShrtcutButton error
+  * RMB on WIM minimap icon = ShowAllWindows instead of ShowAllUnreadWindows
+  * Added WIM-sherlok sound
+  * Fixed ruRU localization
 ------------------------------------------------------------------------
 r272 | pazza | 2010-07-13 23:10:20 +0000 (Tue, 13 Jul 2010) | 7 lines
 Changed paths:
