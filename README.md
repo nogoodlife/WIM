@@ -4,7 +4,7 @@ WIM-3.3.7 for World of Warcraft 3.3.5a (30300) with some random changes/bugfixes
   * Fixed wim2wim talents error for female classes
   * Fixed Ignore ShrtcutButton error
   * RMB on WIM minimap icon = ShowAllWindows instead of ShowAllUnreadWindows
-  * Added WIM-sherlok sound
+  * Added WIM-sherlock wishper sound by default
   * Fixed ruRU localization
 
 Keeping version as 3.3.7, otherwise it will spam to other WIM users.
