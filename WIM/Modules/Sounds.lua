@@ -12,15 +12,15 @@ setfenv(1, WIM);
 db_defaults.sounds = {
     whispers = {
         msgin = true,
-        msgin_sml = "IM",
+        msgin_sml = "WIM-sherlock",
         msgout = false,
-        msgout_sml = "IM",
+        msgout_sml = "WIM-sherlock",
         friend = false,
-        friend_sml = "IM",
+        friend_sml = "WIM-sherlock",
         guild = false,
-        guild_sml = "IM",
+        guild_sml = "WIM-sherlock",
         bnet = false,
-        bnet_sml = "IM"
+        bnet_sml = "WIM-sherlock"
     },
     chat = {
         msgin = true,
@@ -144,7 +144,7 @@ end
 
 -- import WIM's stock sounds into LibSharedMedia-3.0
 SML:Register(SOUND, "IM", "Interface\\AddOns\\"..addonTocName.."\\Sounds\\wisp.wav");
-SML:Register(SOUND, "WIM-sherlok", "Interface\\AddOns\\"..addonTocName.."\\Sounds\\sherlok-holms.mp3");
+SML:Register(SOUND, "WIM-sherlock", "Interface\\AddOns\\"..addonTocName.."\\Sounds\\WIM-sherlock.mp3");
 SML:Register(SOUND, "iChat In", "Interface\\AddOns\\"..addonTocName.."\\Sounds\\ichatIn.mp3");
 SML:Register(SOUND, "iChat Out", "Interface\\AddOns\\"..addonTocName.."\\Sounds\\ichatOut.mp3");
 SML:Register(SOUND, "Chat Blip", "Interface\\AddOns\\"..addonTocName.."\\Sounds\\chat.mp3");

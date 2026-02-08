@@ -22,7 +22,7 @@ addEntry("3.3.7", "01/01/2026", [[
   * Fixed wim2wim talents error for female classes
   * Fixed Ignore ShrtcutButton error
   * RMB on WIM minimap icon = ShowAllWindows instead of ShowAllUnreadWindows
-  * Added WIM-sherlok sound
+  * Added WIM-sherlock sound
   * Fixed ruRU localization
 ]]);
 
